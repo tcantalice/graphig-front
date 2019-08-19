@@ -1,0 +1,20 @@
+@import '_colors';
+@import '_button';
+@import '_menu';
+@import '_content';
+@import '_cards';
+
+* {
+    transition-duration: .3s;
+}
+
+body {
+    background-color: $midnight-blue;
+    display: flex;
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
