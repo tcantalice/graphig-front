@@ -6,15 +6,11 @@ $green: #00A659;
 $yellow: #EE9722;
 $red: #ED3824;
 
-/*
-    Colorize vars
-*/
 $default-bg: $midnight-blue;
 $surface-bg: adjust-color($color: $default-bg, $lightness: -2%);
 $default-color: white;
 $surface-color: white;
 
-/* Inheritance */
 %surface {
     background-color: $surface-bg;
     color: $surface-color;

@@ -8,12 +8,13 @@
         @extend %surface;
         box-shadow: adjust-color($color: black, $alpha: -.5) 0 0 .25em .25em;
         border-radius: .25rem;
-        margin: .5rem .5rem ;
+        padding-bottom: 0;
+        margin: .5rem .5rem;
+        max-height: max-content;
         
         header {
             padding: .5rem .75rem;
         }
-
         canvas {
             margin-top: .75rem;
         }
