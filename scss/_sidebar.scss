@@ -1,0 +1,28 @@
+#sidebar {
+    @extend %surface;
+    min-height: 100vh;
+    height: 100%;
+    min-width: 25%;
+    max-width: 45%;
+    box-shadow: adjust-color($color: black, $alpha: -.5) 5px 0px 5px;
+
+    .menu-title {
+        color: rgba(255, 255, 255, .5);
+        margin-left: .5rem;
+        font-size: 14pt;
+    }
+
+    .menu {
+        width: 100%;
+        
+        li {
+            padding: .75rem 1.25rem;
+            text-transform: uppercase;
+            font-size: 11pt;
+
+            &:hover {
+                background-color: adjust-color($color: $surface-bg, $lightness: -2%);
+            }
+        }
+    }
+}
