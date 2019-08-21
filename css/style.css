@@ -2,16 +2,6 @@
   background-color: #0c0d17;
   color: white; }
 
-button.btn,
-div.btn {
-  box-shadow: none;
-  border: none;
-  border-radius: .25rem;
-  cursor: pointer;
-  padding: .25rem .75rem;
-  font-weight: 500;
-  font-size: 12pt; }
-
 #sidebar {
   min-height: 100vh;
   height: 100%;
@@ -27,9 +17,13 @@ div.btn {
     #sidebar .menu li {
       padding: .75rem 1.25rem;
       text-transform: uppercase;
-      font-size: 11pt; }
+      font-size: 11pt;
+      display: flex;
+      justify-content: space-between; }
       #sidebar .menu li:hover {
         background-color: #090911; }
+      #sidebar .menu li i:hover {
+        cursor: pointer; }
 
 #content {
   padding: 1.25rem 1.25rem; }

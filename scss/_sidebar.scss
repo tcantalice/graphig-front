@@ -19,9 +19,15 @@
             padding: .75rem 1.25rem;
             text-transform: uppercase;
             font-size: 11pt;
+            display: flex;
+            justify-content: space-between;
 
             &:hover {
                 background-color: adjust-color($color: $surface-bg, $lightness: -2%);
+            }
+
+            i:hover {
+                cursor: pointer;
             }
         }
     }
