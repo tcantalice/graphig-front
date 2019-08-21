@@ -6,10 +6,17 @@
     max-width: 45%;
     box-shadow: adjust-color($color: black, $alpha: -.5) 5px 0px 5px;
 
+    hr {
+        width: 90%;
+        color: rgba(255, 255, 255, .1);
+    }
+
     .menu-title {
-        color: rgba(255, 255, 255, .5);
-        margin-left: .5rem;
+        color: rgba(255, 255, 255, .7);
+        margin-left: 1rem;
         font-size: 14pt;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
     }
 
     .menu {

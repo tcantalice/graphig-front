@@ -1,16 +1,20 @@
-var checkboxes = document.getElementsByClassName("checkbox");
+var togglersView = document.getElementsByClassName("toggler-view");
 
-for(var i = 0; i < checkboxes.length; i++){
-    checkboxes[i].addEventListener("click", element=>{
-        toggleCheck(element);
+for(var i = 0; i < togglersView.length; i++){
+    togglersView[i].addEventListener("click", element=>{
+        toggleView(element);
     })
 }
 
-function toggleCheck(element){
+function toggleView(element){
     var classList = element.srcElement.classList;
-    if(classList.contains("fa-square")){
-        classList.replace("fa-square", "fa-check-square");
+    var parent = element.srcElement.parentElement;
+    var chart = document.getElementById(parent.getAttribute("data-chart"));
+    if(classList.contains("fa-eye")){
+        classList.replace("fa-eye", "fa-eye-slash");
+        chart.hidden = true;
     }else{
-        classList.replace("fa-check-square", "fa-square");
+        classList.replace("fa-eye-slash", "fa-eye");
+        chart.hidden = false;
     }
 }

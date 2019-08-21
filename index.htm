@@ -11,34 +11,34 @@
     
 </head>
 <body>
-    <script src="https://kit.fontawesome.com/b2d46c22a2.js"></script>
+    
 
     <section id="sidebar" class="surface">
+        <hr>
         <h2 class="menu-title">Gráficos</h2>
         <ul class="menu">
-            <li>Item 1 <i class="far fa-square checkbox"></i></li>
-            <li>Item 2 <i class="far fa-square checkbox"></i></li>
-            <li>Item 3 <i class="far fa-square checkbox"></i></li>
-            <li>Item 4 <i class="far fa-square checkbox"></i></li>
-            <li>Item 5 <i class="far fa-square checkbox"></i></li>
+            <li data-chart="card-views">Views<i class="far fa-eye toggler-view"></i></li>
+            <li data-chart="card-visits">Visits<i class="far fa-eye toggler-view"></i></li>
+            <li data-chart="card-top-tags">Top tags<i class="far fa-eye toggler-view"></i></li>
+            <li>Item 4 <i class="far fa-eye toggler-view"></i></li>
+            <li>Item 5 <i class="far fa-eye toggler-view"></i></li>
         </ul>
     </section>
-    <!--
     <section id="content">
         <div class="card-group">
-            <div class="card card-square">
+            <div id="card-views" class="card card-square">
                 <header>
                     <h1>Views</h1>
                 </header>
                 <canvas id="week-days-views"></canvas>
             </div>
-            <div class="card card-square">
+            <div id="card-visits" class="card card-square">
                 <header>
                     <h1>Visits</h1>
                 </header>
                 <canvas id="week-days-visits"></canvas>
             </div>
-            <div class="card card-square">
+            <div id="card-top-tags" class="card card-square">
                 <header>
                     <h1>Top tags</h1>
                 </header>
@@ -57,7 +57,8 @@
                 <canvas></canvas>
             </div>
         </div>
-    </section>-->
+    </section>
+    <script src="https://kit.fontawesome.com/b2d46c22a2.js"></script>
     <script src="libs/Chart.bundle.min.js"></script>
     <script src="js/charts.js"></script>
     <script src="js/sidebar.js"></script>
