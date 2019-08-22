@@ -1,9 +1,14 @@
+// Coleção com todos os gráficos
 var charts = [];
 
+// Padronização
 var colors = ["#E2216B","#6937BB","#01B5F1","#00A659","#EE9722","#ED3824"];
+
+// Dados para testes
 var weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 var tags = ['Tag 1', 'Tag 2', 'Tag 3', 'Tag 4', 'Tag 5', 'Tag 6']
 
+// Objetos dos gráficos
 var views = {
     type: 'bar',
     data: {
@@ -114,6 +119,7 @@ var visits = {
     }
 }
 
+// Utilitários
 function generateRandomData(size){
     var data = [];
     for(var i = 0; i < size; i++){
@@ -132,6 +138,7 @@ function generateChart(ctx, config){
     return chart;
 }
 
+// Chamadas
 window.onload = function(){
     charts.push(generateChart(document.getElementById("week-days-views").getContext("2d"), views));
     charts.push(generateChart(document.getElementById("week-days-visits").getContext("2d"), visits));

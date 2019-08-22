@@ -1,11 +1,7 @@
+// Coleção de alternadores
 var togglersView = document.getElementsByClassName("toggler-view");
 
-for(var i = 0; i < togglersView.length; i++){
-    togglersView[i].addEventListener("click", element=>{
-        toggleView(element);
-    })
-}
-
+// Função do alternador
 function toggleView(element){
     var classList = element.srcElement.classList;
     var parent = element.srcElement.parentElement;
@@ -17,4 +13,11 @@ function toggleView(element){
         classList.replace("fa-eye-slash", "fa-eye");
         chart.hidden = false;
     }
+}
+
+// Listeners
+for(var i = 0; i < togglersView.length; i++){
+    togglersView[i].addEventListener("click", element=>{
+        toggleView(element);
+    })
 }
