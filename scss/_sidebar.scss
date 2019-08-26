@@ -2,15 +2,38 @@
     @extend %surface;
     min-height: 100vh;
     height: 100%;
-    min-width: 25%;
-    max-width: 45%;
+    //min-width: 25%;
+    //max-width: 45%;
+    min-width: 4rem;
+    max-width: 5.5rem;
     box-shadow: adjust-color($color: black, $alpha: -.5) 5px 0px 5px;
 
     hr {
-        width: 90%;
+        width: 85%;
         color: rgba(255, 255, 255, .1);
+        margin: 0 auto;
     }
 
+    .collapsed-sidebar-menu {
+        padding: .5rem 0;
+
+        li {
+            text-align: center;
+            margin-bottom: 0;
+            width: 100%;
+
+            i {
+                margin: .5rem 0;
+            }
+
+            &:hover {
+                background-color: adjust-color($color: $surface-bg, $lightness: -2%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    /*
     .menu-title {
         color: rgba(255, 255, 255, .7);
         margin-left: 1rem;
@@ -37,5 +60,5 @@
                 cursor: pointer;
             }
         }
-    }
+    }*/
 }
