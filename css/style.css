@@ -61,26 +61,44 @@
 
 #content {
   padding: 1.25rem 1.25rem;
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> chart-bugs
 }
 
 .card-group {
+  max-width: 100%;
   display: flex;
+<<<<<<< HEAD
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
+=======
+  padding: 0.25rem 0;
+>>>>>>> chart-bugs
 }
 .card-group .card {
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 0.25em 0.25em;
   border-radius: 0.25rem;
   padding-bottom: 0;
+<<<<<<< HEAD
   margin: 0.5rem 0.5rem;
   max-height: max-content;
+=======
+  margin: 0.5rem;
+>>>>>>> chart-bugs
 }
 .card-group .card header {
   padding: 0.5rem 0.75rem;
 }
+<<<<<<< HEAD
 .card-group .card canvas {
   margin-top: 0.75rem;
+=======
+.card-group .card .chart-container {
+  padding: 1rem;
+>>>>>>> chart-bugs
 }
 .card-group .card-square {
   flex: 1 1 30%;
