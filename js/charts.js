@@ -21,6 +21,8 @@ var views = {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
+        aspectRatio: 1,
         scales: {
             yAxes: [{
                 ticks: {
@@ -55,12 +57,14 @@ var topTags = {
             data: generateRandomData(tags.length),
             backgroundColor: colors,
             borderColor: '#0c0d17',
-            borderWidth: 3,
+            borderWidth: 2,
             borderAlign: 'inner'
         }]
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
+        aspectRatio: 1,
         legend: {
             position: 'bottom',
             labels: {
@@ -94,6 +98,8 @@ var visits = {
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
+        aspectRatio: 1,
         scales: {
             yAxes: [{
                 ticks: {
@@ -130,11 +136,7 @@ function generateRandomData(size){
 
 function generateChart(ctx, config){
     var chart = new Chart(ctx, config);
-    if(window.innerWidth <= 683){
-        chart.aspectRatio = 2;
-    }else{
-        chart.aspectRatio = 1;
-    }
+    chart.aspectRatio = 1;
     return chart;
 }
 
@@ -145,7 +147,7 @@ window.onload = function(){
     charts.push(generateChart(document.getElementById("top-tags").getContext("2d"), topTags));
 };
 
-window.onresize = function(){
+/*window.onresize = function(){
     charts.forEach(function(chart){
         if(window.outerWidth <= 683){
             chart.aspectRatio = 2;
@@ -154,4 +156,4 @@ window.onresize = function(){
         }
         chart.update();
     });
-}
+}*/
